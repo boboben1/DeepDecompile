@@ -40,7 +40,7 @@ class DeepDecompile(idaapi.action_handler_t):
         return
     def update(self, ctx):
         return idaapi.AST_ENABLE_ALWAYS
-
+#cannot get this working :(
 class Hooks(idaapi.UI_Hooks):
     def __init__(self):
         idaapi.UI_Hooks.__init__(self)
