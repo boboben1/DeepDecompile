@@ -109,8 +109,8 @@ class myplugin_t(idaapi.plugin_t):
         DeepDecompileFn(idaapi.get_func(ScreenEA()).startEA, 1)
 
     def term(self):
-        idaapi.unregister_action("my:DeepDecompile1")
-        idaapi.unregister_action("my:DeepDecompile3")
+        idaapi.unregister_action("mee:DeepDecompile1")
+        idaapi.unregister_action("mee:DeepDecompile3")
         self.hooks.unhook()
 
 def PLUGIN_ENTRY():
